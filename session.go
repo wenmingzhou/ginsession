@@ -100,4 +100,5 @@ func SessionMiddleware(mgrObj *Mgr) gin.HandlerFunc {
 		c.SetCookie(sessionCookieName, session_id, 3600, "/", "127.0.0.1", false, true)
 		c.Next() //执行后续的请求
 	}
+
 }
