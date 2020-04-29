@@ -3,9 +3,11 @@ package ginsession
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	uuid "github.com/iris-contrib/go.uuid"
 	"github.com/satori/go.uuid"
 	"sync"
 )
+
 
 const (
 	sessionCookieName  ="session_id"  //session_id 在cookie中对应的key
